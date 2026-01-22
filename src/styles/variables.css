@@ -1,0 +1,175 @@
+:root {
+  /* 
+   * EMOTIONAL PALETTE 🎨
+   * Goal: Calm, Warm, Trustworthy, Premium
+   */
+
+  /* Primary Colors - Expanded Tonal Range */
+  --color-primary-green-light: #A8C9AD;
+  --color-primary-green: #6B8F71;
+  --color-primary-green-hover: #55755A;
+  --color-primary-green-dark: #3E5843;
+
+  --color-primary-pink-light: #F5D5D8;
+  --color-primary-pink: #E8B4B8;
+  --color-primary-pink-hover: #D69FA3;
+  --color-primary-pink-dark: #C08489;
+
+  /* Accent Colors - Rich & Vibrant */
+  --color-accent-gold-light: #EBE0B8;
+  --color-accent-gold: #D6C68B;
+  --color-accent-gold-dark: #B8A56D;
+
+  --color-accent-lavender-light: #D4CCE8;
+  --color-accent-lavender: #B5A8D2;
+  --color-accent-lavender-dark: #9688B8;
+
+  /* Emotional State Colors */
+  --color-calm: #A8D5E2;
+  /* Serene Blue */
+  --color-excited: #FFB6C1;
+  /* Playful Pink */
+  --color-intimate: #C9A9D5;
+  /* Deep Lavender */
+  --color-playful: #FFD97D;
+  /* Warm Yellow */
+
+  /* Backgrounds */
+  --color-bg-body: #FAF9F6;
+  --color-bg-card: #FFFFFF;
+  --color-bg-subtle: #F3F1ED;
+  --color-bg-elevated: rgba(255, 255, 255, 0.95);
+
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-bg-light: rgba(255, 255, 255, 0.5);
+  --glass-border: rgba(255, 255, 255, 0.8);
+  --backdrop-blur: blur(12px);
+  --backdrop-blur-strong: blur(20px);
+
+  /* Text - Never pure black */
+  --color-text-main: #2C3E50;
+  --color-text-muted: #64748B;
+  --color-text-subtle: #94A3B8;
+  --color-text-white: #FFFFFF;
+
+  /* Feedback */
+  --color-success: #88B04B;
+  --color-error: #D98C8C;
+  --color-info: #8FB8DE;
+  --color-warning: #F4A460;
+
+  /* Gradients - Linear */
+  --gradient-primary: linear-gradient(135deg, #6B8F71 0%, #A8C9AD 100%);
+  --gradient-romantic: linear-gradient(135deg, #E8B4B8 0%, #F5D5D8 100%);
+  --gradient-sunset: linear-gradient(135deg, #FFB6C1 0%, #FFD97D 100%);
+  --gradient-calm: linear-gradient(135deg, #A8D5E2 0%, #B5A8D2 100%);
+  --gradient-hero: linear-gradient(135deg, #FAF9F6 0%, #F5E8E4 50%, #E8F4F0 100%);
+
+  /* Gradients - Radial (for orbs/backgrounds) */
+  --gradient-orb-pink: radial-gradient(circle, rgba(232, 180, 184, 0.6) 0%, rgba(232, 180, 184, 0) 70%);
+  --gradient-orb-gold: radial-gradient(circle, rgba(214, 198, 139, 0.5) 0%, rgba(214, 198, 139, 0) 70%);
+  --gradient-orb-lavender: radial-gradient(circle, rgba(181, 168, 210, 0.4) 0%, rgba(181, 168, 210, 0) 70%);
+  --gradient-orb-green: radial-gradient(circle, rgba(107, 143, 113, 0.3) 0%, rgba(107, 143, 113, 0) 70%);
+
+  /* Spacing Scale */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-xxl: 64px;
+  --space-3xl: 96px;
+
+  /* Shadows - Enhanced with Colored Glows */
+  --shadow-sm: 0 2px 4px rgba(44, 62, 80, 0.05);
+  --shadow-md: 0 4px 12px rgba(44, 62, 80, 0.08);
+  --shadow-lg: 0 12px 24px rgba(44, 62, 80, 0.12);
+  --shadow-xl: 0 20px 40px rgba(44, 62, 80, 0.15);
+
+  /* Colored Shadows/Glows */
+  --shadow-green: 0 8px 16px rgba(107, 143, 113, 0.25);
+  --shadow-pink: 0 8px 16px rgba(232, 180, 184, 0.3);
+  --shadow-gold: 0 8px 16px rgba(214, 198, 139, 0.25);
+  --shadow-lavender: 0 8px 16px rgba(181, 168, 210, 0.25);
+
+  /* Glow Effects */
+  --glow-green: 0 0 20px rgba(107, 143, 113, 0.4);
+  --glow-pink: 0 0 20px rgba(232, 180, 184, 0.4);
+  --glow-gold: 0 0 20px rgba(214, 198, 139, 0.4);
+
+  /* Border Radius */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Typography Scale */
+  --font-size-xs: 0.75rem;
+  /* 12px */
+  --font-size-sm: 0.875rem;
+  /* 14px */
+  --font-size-base: 1rem;
+  /* 16px */
+  --font-size-lg: 1.125rem;
+  /* 18px */
+  --font-size-xl: 1.25rem;
+  /* 20px */
+  --font-size-2xl: 1.5rem;
+  /* 24px */
+  --font-size-3xl: 2rem;
+  /* 32px */
+  --font-size-4xl: 2.5rem;
+  /* 40px */
+  --font-size-5xl: 3.5rem;
+  /* 56px */
+
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.7;
+
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.025em;
+
+  /* Animation Durations */
+  --duration-instant: 0.1s;
+  --duration-fast: 0.2s;
+  --duration-base: 0.3s;
+  --duration-slow: 0.4s;
+  --duration-slower: 0.6s;
+
+  /* Animation Timing Functions */
+  --ease-smooth: cubic-bezier(0.25, 0.8, 0.25, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-elastic: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Combined Transitions */
+  --transition-fast: 0.2s var(--ease-smooth);
+  --transition-base: 0.3s var(--ease-smooth);
+  --transition-smooth: 0.4s var(--ease-smooth);
+  --transition-spring: 0.5s var(--ease-spring);
+
+  /* Fonts */
+  --font-family-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-family-display: 'Outfit', sans-serif;
+  --font-family-romantic: 'Playfair Display', serif;
+
+  /* Z-Index Scale */
+  --z-base: 1;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 1000;
+  --z-tooltip: 1100;
+}
