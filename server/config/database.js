@@ -1,4 +1,11 @@
-const Database = require('better-sqlite3');
+let Database;
+if (process.env.NODE_ENV !== 'production') {
+  try {
+    Database = require('better-sqlite3');
+  } catch (err) {
+    console.warn("better-sqlite3 not found, skipping.");
+  }
+}
 const { Pool } = require('pg');
 const fs = require('fs');
 const path = require('path');
